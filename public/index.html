@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title> FindCycle </title>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-2hwxPmQ_wWOPNCGdXBppbZ5YFFu9C8A&callback=getLocation"
+    async defer></script>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+<body onload="getBikePoints(0)">
+    <div id="header">
+        <div id="header__content">
+            <h1 id="header__title">FindCycle</h1>
+            <p id="header__flavor">beat the rush - find your ride</p>
+        </div>
+        <div id="header__time-selector">
+            <select id="header__time-option" onchange="getBikePoints(this.value)">
+                <option value=0>Right now</option>
+                <option value=15>In 15 minutes</option>
+                <option value=30>In 30 minutes</option>
+                <option value=60>In 1 hour</option>
+            </select>
+        </div>
+    </div>
+    <div id="main_content">
+        <div id="map_canvas"></div>
+        <div id="footer">Designed at Tufts Polyhack 2018 with love by Tom Frikker, Ray Parker, and Justin Hudson</div>
+    </div>
+</body>
+</body>
+</html>
