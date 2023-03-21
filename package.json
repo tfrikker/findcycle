@@ -4,7 +4,8 @@
   "dependencies": {
     "body-parser": "latest",
     "express": "latest",
-    "mongodb": "latest",
+    "mongodb": "~4.2.1",
     "python-shell": "^1.0.6"
   }
 }
+
